@@ -57,7 +57,7 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			filename: 'index.html',
-			title: 'React 3D Editor',
+			title: '3D Editor',
 		}),
 	],
 	optimization: {

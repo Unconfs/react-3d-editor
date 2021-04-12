@@ -4,7 +4,7 @@ const path = require('path');
 
 const baseConfig = require('./webpack.common.js');
 
-const devPort = process.env.PORT || 8080;
+const devPort = 8080;
 const host = 'localhost';
 
 module.exports = merge(baseConfig, {
