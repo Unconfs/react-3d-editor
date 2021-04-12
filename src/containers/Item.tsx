@@ -165,19 +165,7 @@ class Item extends Component<{}, IItemState> {
 						<Icon className="editor-icon" name="list-alt" onClick={this.handleSavedListVisible} />
 					</div>
 					<div className="editor-item-tools-actions">
-						<img
-							style={{
-								minWidth: 16,
-								minHeight: 16,
-								boxSizing: 'unset',
-								boxShadow: 'none',
-								padding: '0 6px 0 0',
-								cursor: 'pointer',
-							}}
-							src="chrome-extension://ohcpnigalekghcmgcdcenkpelffpdolg/img/icon16.png"
-							title={`Select with ColorPick Eyedropper - See advanced option: "Add ColorPick Eyedropper near input[type=color] fields on websites`}
-							className="colorpick-eyedropper-input-trigger"
-						/>
+
 						<Icon className="editor-icon" name="ar" onClick={this.handleARDialogVisible} />
 						<Icon className="editor-icon" name="eye" onClick={this.handleDefaultDialogVisible} />
 						<Icon className="editor-icon" name="save" onClick={this.handleSaveSceneModalVisible} />

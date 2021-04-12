@@ -14,25 +14,18 @@ class App extends Component {
                     <link rel="manifest" href="./manifest.json" />
                     <link rel="shortcut icon" href="./favicon.ico" />
                     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" />
-                    <title>React 3D Editor</title>
-                    <script async={true} src="https://www.googletagmanager.com/gtag/js?id=UA-97485289-1" />
+                    <title>3D Editor</title>
+                    <script async={true} src="https://www.googletagmanager.com/gtag/js?id=UA-2483685-35" />
                     <script>
                         {`
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
                         gtag('js', new Date());
-                        gtag('config', 'UA-97485289-1');
+                        gtag('config', 'UA-2483685-35');
                         `}
                     </script>
                 </Helmet>
                 <Editor />
-                <GithubCorner
-                    href="https://github.com/salgum1114/react-3d-editor"
-                    target="_blank"
-                    bannerColor="#08979c"
-                    size={60}
-                    svgStyle={{ bottom: 0, top: 'unset', transform: 'rotate(90deg)', zIndex: 9999 }}
-                />
             </div>
         );
     }
