@@ -40,26 +40,6 @@ module.exports = merge(baseConfig, {
 			}),
 		],
 	},
-	devServer: {
-		inline: true,
-		port: process.env.PORT,
-		contentBase: path.resolve(__dirname, 'public'),
-		hot: false,
-		publicPath: '/',
-		historyApiFallback: true,
-		proxy: {
-			'/api': {
-				target: 'http://localhost',
-			},
-			'/api/ws': {
-				target: 'ws://localhost',
-				ws: true,
-			},
-		},
-		headers: {
-			'X-Frame-Options': 'sameorigin', // used iframe
-		},
-	},
 	plugins: [
 		// 로더들에게 옵션을 넣어주는 플러그인
 		new webpack.LoaderOptionsPlugin({
